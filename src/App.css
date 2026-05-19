@@ -40,21 +40,29 @@ button:hover {
 
 .habits-list {
   list-style: none;
-  padding: 0;
+  padding: 10px;
 }
 
 .habits-list li {
   display: flex;
-  align-items: center;
+  align-items: center; 
+  gap: 8px;
   padding: 10px;
   border-bottom: 1px solid #eee;
 }
 
 .habits-list input[type="checkbox"] {
-  margin-right: 10px;
+  flex-shrink: 0;
 }
 
-.completed {
+.habits-list li span {
+  flex: 1;
+}
+
+.habits-list li button {
+  flex-shrink: 0;
+  padding: 5px 10px;
+  font-size: 14px;
   text-decoration: line-through;
   color: #888;
 }
